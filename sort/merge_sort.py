@@ -1,13 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+
 def merge(left, right):
-    """
-    Takes two sorted sub lists and merges them in to a single sorted sub list
-    and returns it.
-    :param left: A list of sorted integers
-    :param right: A list of sorted integers
-    :rtype: A list of sorted integers
-    """
     result = []
-    n, m = 0, 0
+    n, m =0, 0
     while n < len(left) and m < len(right):
         if left[n] <= right[m]:
             result.append(left[n])
@@ -22,12 +19,6 @@ def merge(left, right):
 
 
 def sort(seq):
-    """
-    Takes a list of integers and sorts them in ascending order. This sorted
-    list is then returned.
-    :param seq: A list of integers
-    :rtype: A list of sorted integers
-    """
     if len(seq) <= 1:
         return seq
 
